@@ -5,7 +5,7 @@ metadata:
   name: kube-ops-view
   namespace: kube-ops-view
 spec:
-  url: https://kubernetes-charts.storage.googleapis.com/stable
+  url: https://kubernetes-charts.storage.googleapis.com
   interval: 10m
   name: kube-ops-view
   version: 1.2.4
