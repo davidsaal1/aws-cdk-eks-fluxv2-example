@@ -7,5 +7,3 @@ metadata:
 spec:
   url: https://kubernetes-charts.storage.googleapis.com
   interval: 10m
-  name: kube-ops-view
-  version: 1.2.4
