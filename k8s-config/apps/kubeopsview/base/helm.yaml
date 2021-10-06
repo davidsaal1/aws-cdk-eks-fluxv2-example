@@ -2,17 +2,19 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: podinfo
-  namespace: podinfo
+  name: kube-ops-view
+  namespace: kube-ops-view
 spec:
   interval: 10m
   chart:
     spec:
-      chart: podinfo
+      chart: kube-ops-view
       sourceRef:
         kind: HelmRepository
-        name: podinfo
-        namespace: podinfo
+        name: kube-ops-view
+        namespace: kube-ops-view
+      nodeSelector:
+        intent: control-apps
   values:
     replicaCount: 2
     resources:
