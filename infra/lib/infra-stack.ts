@@ -103,7 +103,7 @@ export class InfraStack extends cdk.Stack {
       ],
       subnets: publicSubnets,
       nodeRole: workerRole,
-      minSize: 1,
+      minSize: 2,
       desiredSize: 2,
       maxSize: 5,
       capacityType: eks.CapacityType.SPOT,
