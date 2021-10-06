@@ -88,7 +88,7 @@ export class InfraStack extends cdk.Stack {
       labels: { intent: 'control-apps' }
     });
     
-    /*
+    
     // Creating managed nodegroup with Spot Capacity
     cluster.addNodegroupCapacity('dev-4vcpu-16gb-spot', {
       instanceTypes: [
@@ -109,7 +109,7 @@ export class InfraStack extends cdk.Stack {
       capacityType: eks.CapacityType.SPOT,
       labels: { intent: 'apps' },
     });
-    */
+    
 
     // Add our default addons
     new ClusterAutoscaler(this, 'ClusterAutoscaler', {
