@@ -3,6 +3,6 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - rbac.yaml
-  - deployment.yam
+  - deployment.yaml
   - service.yaml
   - ingress.yaml
