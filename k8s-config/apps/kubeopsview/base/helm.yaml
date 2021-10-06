@@ -13,10 +13,9 @@ spec:
         kind: HelmRepository
         name: kube-ops-view
         namespace: kube-ops-view
-  nodeSelector:
-    intent: control-apps
   values:
     replicaCount: 2
+    
     resources:
       requests:
         cpu: "16m"
@@ -24,6 +23,8 @@ spec:
       limits:
         cpu: "16m"
         memory: "24Mi"
+    nodeSelector:
+      intent: control-apps
     ingress:
       enabled: true
       annotations:
