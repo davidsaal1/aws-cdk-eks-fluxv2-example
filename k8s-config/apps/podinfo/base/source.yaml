@@ -7,4 +7,3 @@ metadata:
 spec:
   url: https://stefanprodan.github.io/podinfo
   interval: 10m
-  
