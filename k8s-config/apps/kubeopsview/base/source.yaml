@@ -1,9 +1,0 @@
----
-apiVersion: source.toolkit.fluxcd.io/v1beta1
-kind: HelmRepository
-metadata:
-  name: kube-ops-view
-  namespace: kube-ops-view
-spec:
-  url: https://kubernetes-charts.storage.googleapis.com/stable
-  interval: 10m
