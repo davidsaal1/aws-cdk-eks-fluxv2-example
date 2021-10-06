@@ -41,7 +41,7 @@ export class InfraStack extends cdk.Stack {
     });
 
     // The EKS cluster, without worker nodes as we'll add them later
-    const cluster = new eks.Cluster(this, 'AAoDcluster', {
+    const cluster = new eks.Cluster(this, 'aaodCluster', {
       vpc: vpc,
       role: clusterRole,
       version: eks.KubernetesVersion.V1_20,
