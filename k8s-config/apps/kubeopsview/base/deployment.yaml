@@ -8,8 +8,6 @@ metadata:
   namespace: kube-ops-view
 spec:
   replicas: 2
-  nodeSelector:
-    intent: control-apps
   selector:
     matchLabels:
       application: kube-ops-view
@@ -21,6 +19,8 @@ spec:
         component: frontend
     spec:
       serviceAccountName: kube-ops-view
+      nodeSelector:
+        intent: control-apps
       containers:
       - name: service
         # see https://github.com/hjacobs/kube-ops-view/releases
