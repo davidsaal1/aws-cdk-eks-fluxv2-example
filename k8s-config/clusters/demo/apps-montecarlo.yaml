@@ -5,7 +5,7 @@ metadata:
   name: apps-montecarlo
   namespace: flux-system
 spec:
-  #interval: 10m0s
+  interval: 10m0s
   path: ./k8s-config/apps/montecarlo/base
   prune: true
   sourceRef:
