@@ -18,7 +18,7 @@ metadata:
   labels: 
     app: monte-carlo-pi-service 
 spec: 
-  replicas: 2 
+  #replicas: 2 
   selector: 
     matchLabels: 
       app: monte-carlo-pi-service 
