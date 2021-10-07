@@ -4,10 +4,9 @@ metadata:
   labels:
     application: kube-ops-view
     component: frontend
-  name: kube-ops-view-deployment
-  namespace: kube-ops-view
+  name: kube-ops-view
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       application: kube-ops-view
@@ -18,7 +17,7 @@ spec:
         application: kube-ops-view
         component: frontend
     spec:
-      serviceAccountName: default
+      serviceAccountName: kube-ops-view
       nodeSelector:
         intent: control-apps
       containers:

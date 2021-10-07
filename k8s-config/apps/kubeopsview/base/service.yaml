@@ -4,8 +4,7 @@ metadata:
   labels:
     application: kube-ops-view
     component: frontend
-  name: kube-ops-view-service
-  namespace: kube-ops-view
+  name: kube-ops-view
 spec:
   selector:
     application: kube-ops-view

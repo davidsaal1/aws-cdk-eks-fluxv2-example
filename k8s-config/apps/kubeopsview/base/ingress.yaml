@@ -6,7 +6,6 @@ metadata:
     application: kube-ops-view
     component: frontend
   name: kube-ops-view-ingress
-  namespace: kube-ops-view
   annotations:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
@@ -17,5 +16,5 @@ spec:
         paths:
           - path: /*
             backend:
-              serviceName: kube-ops-view-service
+              serviceName: kube-ops-view
               servicePort: 80
