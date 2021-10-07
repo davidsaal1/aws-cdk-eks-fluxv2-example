@@ -6,7 +6,7 @@ metadata:
     component: frontend
   name: kube-ops-view
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       application: kube-ops-view
