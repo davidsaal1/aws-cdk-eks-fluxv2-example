@@ -4,5 +4,5 @@ kind: Kustomization
 resources:
 - addons.yaml
 - apps.yaml #kube-ops-view app
-#- apps-montecarlo.yaml
-#- apps-php.yaml
+- apps-montecarlo.yaml
+- apps-php.yaml
