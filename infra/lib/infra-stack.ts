@@ -92,14 +92,15 @@ export class InfraStack extends cdk.Stack {
     // Creating managed nodegroup with Spot Capacity
     cluster.addNodegroupCapacity('dev-4vcpu-16gb-spot', {
       instanceTypes: [
-        new ec2.InstanceType("m4.xlarge"),
-        new ec2.InstanceType("m5.xlarge"),
-        new ec2.InstanceType("m5a.xlarge"),
-        new ec2.InstanceType("m5ad.xlarge"),
-        new ec2.InstanceType("m5d.xlarge"),
-        new ec2.InstanceType("m6i.xlarge"),
-        new ec2.InstanceType("t2.xlarge"),
-        new ec2.InstanceType("t3.xlarge"),
+        new ec2.InstanceType("m4.large"),
+        new ec2.InstanceType("m5.large"),
+        new ec2.InstanceType("m5a.large"),
+        new ec2.InstanceType("m5ad.large"),
+        new ec2.InstanceType("m5d.large"),
+        new ec2.InstanceType("m6i.large"),
+        new ec2.InstanceType("t2.large"),
+        new ec2.InstanceType("t3.large"),
+        new ec2.InstanceType("t3a.large"),
       ],
       subnets: publicSubnets,
       nodeRole: workerRole,
